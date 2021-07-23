@@ -1,0 +1,13 @@
+
+
+
+{% block body %}
+<form action= '' method='POST'>
+    {{ form.hidden_tag() }}
+    {{ form.name.label }} {{ form.name }}
+    {{ form.rating.label }} {{ form.rating }}
+    {{ form.team_id.label }} {{ form.team_id }}<br>
+    {{ form.submit }}
+</form>
+{% endblock %}
+

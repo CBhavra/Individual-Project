@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% block body %}
+<html>
+   <body>
+     <h1>Add Team</h1>
+     <form method="POST" action="/">
+         <input type="text" name="title">
+         <input type="submit" value="Add">
+     </form>
+ 
+     <h1>Teams</h1>
+     {% for Team in Teams %}
+       <p>{{Team.title}}</p>
+     {% endfor %}
+    {% endblock %}
+
+</body>
+ </html>
+
+
+
+<!---{% extends 'layout.html' %}
+
+{% block body %}
+
+   <h1>My Cricket Stats app</h1>
+   <br>
+{% endblock %}--->   

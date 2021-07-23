@@ -1,0 +1,8 @@
+if team_form.validate_on_submit():
+        teams.name=team_form.name.data, country=team_form.country.data, league=team_form.league.data
+        db.session.add(new_team)
+        db.session.commit()
+
+        return redirect(url_for('home'))
+    else:
+        return render_template('home.html', teams=teams, team_form=team_form)

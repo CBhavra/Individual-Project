@@ -12,7 +12,7 @@ class Teamsform(FlaskForm):
 class Playersform(FlaskForm):
     name = StringField('Add a player name')
     rating = StringField('What is the player rating?')
-    team_id = IntegerField('Waht is the team id?')
+    team_id = IntegerField('What is the team id?')
     submit = SubmitField('Submit')
 
 class Statsform(FlaskForm):

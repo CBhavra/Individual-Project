@@ -38,6 +38,18 @@ class TestViews(TestBase):
         response = self.client.get(url_for('update', id=1))
         self.assert200(response)
 
+    def test_home_player(self):
+        response = self.client.get(url_for('home_players'))
+        self.assert200(response)
+
+    def test_create_players(self):
+        response = self.client.get(url_for('create_players'))
+        self.assert200(response)
+
+    def test_update_players(self):
+        response = self.client.get(url_for('update_players', id=1))
+        self.assert200(response)
+
     
 class TestRead(TestBase):
     def test_home(self):
@@ -80,3 +92,5 @@ class TestDelete(TestBase):
         
         assert '' in response.data.decode()
         assert 'Run unit tests' not in response.data.decode()
+
+

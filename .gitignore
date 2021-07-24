@@ -109,6 +109,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.venv/*
 
 # Spyder project settings
 .spyderproject
@@ -129,7 +130,6 @@ dmypy.json
 .pyre/
 
 # Other
-application/__init__.py
 application/data.db
 application/test.db
-tests/__init__.py
+application/copy.txt

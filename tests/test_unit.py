@@ -17,7 +17,7 @@ class TestBase(TestCase):
 
     def setUp(self):
         db.create_all()
-        team1 = Team(name='Man United', country= 'England', league= 'international')
+        team1 = Team(name='Birmingham bears', country= 'England', league= 'international')
         db.session.add(team1)    
     
         db.session.commit()
@@ -25,10 +25,58 @@ class TestBase(TestCase):
     def tearDown(self):
         db.drop_all()
 
+class TestViews(TestBase):
+    def test_home(self):
+        response = self.client.get(url_for('home'))
+        self.assert200(response)
+
+    def test_create(self):
+        response = self.client.get(url_for('create'))
+        self.assert200(response)
+
+    def test_update(self):
+        response = self.client.get(url_for('update', id=1))
+        self.assert200(response)
+
+    
 class TestRead(TestBase):
     def test_home(self):
         response = self.client.get(url_for('home'))
         
-        assert 'Man United' in response.data.decode()
+        assert 'Birmingham bears' in response.data.decode()
         assert 'England' in response.data.decode()
         assert 'international' in response.data.decode() 
+
+class TestCreate(TestBase):
+    def test_create(self):
+        response = self.client.post(
+            url_for('create'),
+            data={'name': 'Add a team name'},
+            follow_redirects=True
+
+        )
+
+        assert 'Add a team name' in response.data.decode()
+        
+class TestUpdate(TestBase):
+    def test_update(self):
+        response = self.client.post(
+            url_for('update', id=1),
+            data={'name': 'Add a team name'},
+            follow_redirects=True
+
+        )       
+
+        assert 'Add a team name' in response.data.decode()
+        assert 'Add a team name' in response.data.decode()
+        assert 'Run unit tests' not in response.data.decode()
+
+class TestDelete(TestBase):
+    def test_delete(self):
+        response = self.client.get(
+            url_for('delete', id=1),
+            follow_redirects=True
+        )
+        
+        assert '' in response.data.decode()
+        assert 'Run unit tests' not in response.data.decode()

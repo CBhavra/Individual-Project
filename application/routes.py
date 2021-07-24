@@ -1,9 +1,9 @@
 from . import app, db
 from flask import redirect, url_for, request, render_template
-from .models import Stats 
-from .models import Players
-from .models import Team
-from .forms import Teamsform, Playersform, Statsform
+from application.models import Stats 
+from application.models import Players
+from application.models import Team
+from application.forms import Teamsform, Playersform, Statsform
 
 # TEAMS
 
@@ -65,18 +65,18 @@ def delete(id):
     
 # PLAYERS
 
-@app.route('/players/home')
-def home_players():
-    players = Players.query.all()
+@app.route('/home/players')
+def homeplayers():
+    playas = Players.query.all()
 
-    result = 'My players'
-    for player in players:
-        result += f'{player.name}  |  {player.rating}\n'.format(player)
+    result = 'My players:  '
+    for player in playas:
+        result += f'{player.name}  |  {player.rating}  |  {player.team_id}\n'.format(player)
 
     return result
 
 
-@app.route('/players/create', methods=['GET','POST'])
+@app.route('/create/players', methods=['GET','POST'])
 def create_players():
     form = Playersform()
     
@@ -85,97 +85,41 @@ def create_players():
         db.session.add(new_player)
         db.session.commit()
 
-        return redirect(url_for('home_players'))
+        return redirect(url_for('homeplayers'))
     else:
         return render_template('create1.html', form=form)
 
 
-@app.route('/players/update/<id>', methods=['GET','POST'])
+@app.route('/update/players/<id>', methods=['GET','POST'])
 def update_players(id):
-    players = Players.query.get(id)
+    playas = Players.query.get(id)
     form = Playersform()
     
     if request.method == 'POST':
         
-        players.name = form.name.data
-        players.rating = form.rating.data 
-        players.team_id = form.team_id.data
+        playas.name = form.name.data
+        playas.rating = form.rating.data 
+        playas.team_id = form.team_id.data
         
         
         db.session.commit()
 
-        return redirect(url_for('home_players'))
+        return redirect(url_for('homeplayers'))
     else: 
         return render_template('create1.html', form=form)
 
 
 
-@app.route('/players/delete/<id>', methods=['GET','POST'])
+@app.route('/delete/players/<id>', methods=['GET','POST'])
 def delete_players(id):
-    players = Players.query.get(id)
+    playas = Players.query.get(id)
     form = Playersform()
 
     if request.method == 'POST':
-        db.session.delete(players)
+        db.session.delete(playas)
         db.session.commit()
 
-        return redirect(url_for('home_players'))
+        return redirect(url_for('homeplayers'))
     else: 
         return render_template('create1.html', form=form)
 
-# STATISTICS
-
-@app.route('/stats')
-def home_stats():
-    stats = Stats.query.all()
-
-    result = 'My stats'
-    for stat in stats:
-        result += f'{stat.description}     {stat.completed}\n'
-
-    return result
-
-
-@app.route('/stats/create', methods=['GET','POST'])
-def create_stats(stat):
-    stats = Stats.query.all()
-    form = Statsform()
-    
-    if request.method == 'POST':
-        new_stat = Stats(stat=form.stat.data, runs=form.runs.data, wickets=form.wickets.data)
-        db.session.add(new_stat)
-        db.session.commit()
-
-        return redirect(url_for('home'))
-    else: 
-        return render_template('create.html', form=form)
-
-
-@app.route('/stats/update', methods=['GET','POST'])
-def update_stats(description, id):
-    stat = Stats.query.get(id)
-    form = Statsform
-
-    if request.method == 'POST':
-        stat.description = description 
-        db.session.add(stat=form.stat.data, runs=form.runs.data, wickets=form.wickets.data)
-        db.session.commit()
-
-        return redirect(url_for('home'))
-    else: 
-        return render_template('create.html', form=form)
-
-
-
-@app.route('/stats/delete', methods=['GET','POST'])
-def delete_stats(id):
-    stat = Stats.query.get(id)
-    form = Statsform()
-    
-    if request.method == 'POST':
-        db.session.delete(stat=form.stat.data, runs=form.runs.data, wickets=form.wickets.data)
-        db.session.commit()
-
-        return redirect(url_for('home'))
-    else: 
-        return render_template('create.html', form=form)

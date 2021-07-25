@@ -19,6 +19,8 @@
 
 [Testing Analysis](#Testing-Analysis)
 
+[Continuous ntegration](Continuous-Integration)
+
 [Development](#Development)
 
 [Front-End](#Front-End)
@@ -96,14 +98,42 @@ My project tracking method was to use Trello, it is useful and free-to-use and p
 ### Entity Relationship Diagram 
 
 Version 1 and 2 of my ERD can be seen [here](https://github.com/CBhavra/Individual-Project/blob/main/Resources/ERD%20v1.drawio) or below:
+
 <img src="https://github.com/CBhavra/Individual-Project/blob/main/images/ERD%20v1.jpg"/>
 
-It is basic and then evolves from a basic one-to-many relational database to two one-to-many relationships.
+It is basic and then evolves from a basic one-to-many relational database to two one-to-many relationships. It works as one team can have many players and in the same way one player can have many statistics. 
 
 My final revision can be seen [here](https://github.com/CBhavra/Individual-Project/blob/main/Resources/ERD%20v1.drawio) or below:
+
 <img src="https://github.com/CBhavra/Individual-Project/blob/main/images/ERD%20v2.jpg"/>
 
 As can be seen not much has changed from the original. I wanted to make one change, removing the format of the team table for the name of team. Whhich clearly makes more sense as the name of the team is fairly important. 
+
+
+### Testing Analysis 
+
+The project will only contain unit testing and automated testing in Jenkins. It's possible to use much better forms of testing however, as per the specification I was to use only what we had been given with reagrds to tools. Other forms of testing can involve non-functional testing and maintenance testing which could help to increase the viabiity of the app.
+
+
+### Continuous Integration 
+
+<img src="https://github.com/CBhavra/Individual-Project/blob/main/images/CI%20PIpeline.jpg"/>
+
+The above is a visual representation of my CI pipeline, it shows all the toos used in the project and what happens at each stage until completeion.
+
+The Jenkins script I used can be characterized in the following way:
+
+- Installation of dependencies
+
+`sudo apt-get install python3 python3-pip python3-venv`
+
+          
+          
+
+
+
+
+
 
 
 

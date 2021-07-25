@@ -87,6 +87,26 @@ My risk assessment can be seen below:
 Throughout the project multiple risks came to me at different times. This was true for much of the rest of the projects aspects. The full risk assessment file can be found [here](https://github.com/CBhavra/Individual-Project/blob/main/Resources/Risk%20Assessment.xlsx).
 
 
+### Project Tracking 
+
+My project tracking method was to use Trello, it is useful and free-to-use and provided me with a friendly looking board to keep track of all requirements. It can be seen [here](https://github.com/CBhavra/Individual-Project/blob/main/Resources/Cricket%20App%20Kanban%20_%20Trello.html) or below:
+<img src="https://github.com/CBhavra/Individual-Project/blob/main/images/Trello.jpg"/>
+
+
+### Entity Relationship Diagram 
+
+Version 1 and 2 of my ERD can be seen [here](https://github.com/CBhavra/Individual-Project/blob/main/Resources/ERD%20v1.drawio) or below:
+<img src="https://github.com/CBhavra/Individual-Project/blob/main/images/ERD%20v1.jpg"/>
+
+It is basic and then evolves from a basic one-to-many relational database to two one-to-many relationships.
+
+My final revision can be seen [here](https://github.com/CBhavra/Individual-Project/blob/main/Resources/ERD%20v1.drawio) or below:
+<img src="https://github.com/CBhavra/Individual-Project/blob/main/images/ERD%20v2.jpg"/>
+
+As can be seen not much has changed from the original. I wanted to make one change, removing the format of the team table for the name of team. Whhich clearly makes more sense as the name of the team is fairly important. 
+
+
+
 
 
 

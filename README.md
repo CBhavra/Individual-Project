@@ -84,6 +84,8 @@ My risk assessment can be seen below:
 
 <img src="https://github.com/CBhavra/Individual-Project/blob/main/images/Risk%20Assessment.jpg"/>
 
+Throughout the project multiple risks came to me at different times. This was true for much of the rest of the projects aspects. The full risk assessment file can be found [here](https://github.com/CBhavra/Individual-Project/blob/main/Resources/Risk%20Assessment.xlsx).
+
 
 
 

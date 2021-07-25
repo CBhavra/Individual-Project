@@ -43,21 +43,36 @@ There are many **Teams** (and types of teams), **players** and **statistics** to
 
 The core objective of this Project is to produce a CRUD application using the particuolar tools given to us for example:
 
--Creating the CRUD app with Python 3
+- Creating the CRUD app with Python 3
 
--Front-end made using Flask
+- Front-end made using Flask
 
--Project tracking with Trello 
+- Project tracking with Trello 
 
--Relational database
+- Relational database
 
--Risk assessment
+- Risk assessment
 
--Tetsing using pytest and automation using Jenkins
+- Tetsing using pytest and automation using Jenkins
 
 
 ### Proposal 
 
+As a fan of cricket I would enjoy an app that could show me all kinds of statistics of my favourite players or teams. So I know other fans would also like it. Fans should be able to view any stats they wish, create new stats for new players, update old stats and remove stats if they are 'fake' or have been put up as a joke.
+The follwoing is an epic (a collection of User Stories that are the core requirements of the app.
+
+***Create***
+- As a cricket fan I want to be able to create statistics so that I view them at another later date 
+- As a cricket fan I want to be able to create statistics so that other users can see them 
+
+***Read***
+- As a cricket fan I want to be able to view istics so that I can see the scores and runs of my favourite teams and players 
+
+***Update***
+- As a user of the app I wish to be able to change the statistics so that I can correct or update the stats 
+
+***Delete***
+- As a user of the app I want to be able to remove any 'fake' or 'joke' statistic inputs
 
 
 

@@ -2,6 +2,7 @@
 
 
 ## Contents
+
 [Introduction](#Introduction)
 
 [Objective](#Objective)
@@ -74,5 +75,11 @@ The follwoing is an epic (a collection of User Stories that are the core require
 ***Delete***
 - As a user of the app I want to be able to remove any 'fake' or 'joke' statistic inputs
 
+## Architecture 
+
+
+### Risk Assessment 
+
+My risk assessment can be seen 
 
 

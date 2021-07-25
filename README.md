@@ -42,11 +42,17 @@ There are many **Teams** (and types of teams), **players** and **statistics** to
 ### Ojectives
 
 The core objective of this Project is to produce a CRUD application using the particuolar tools given to us for example:
+
 -Creating the CRUD app with Python 3
+
 -Front-end made using Flask
+
 -Project tracking with Trello 
+
 -Relational database
+
 -Risk assessment
+
 -Tetsing using pytest and automation using Jenkins
 
 

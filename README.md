@@ -38,8 +38,8 @@
 
 ## Introduction
 
-Cricket is an old but well-loved sport. It is played in many different countries and climates and has many forms some long (lasting whole days) and some small (lasting  only a few hours). It, like many other sports is comprised of two teams. One team tries to take **wickets** while the other team tries to score **runs**. 
-There are many **Teams** (and types of teams), **players** and **statistics** to record as that is just the nature of the sport. So a cricket fan would enjoy the ability to view, input, update or remove team or player statistics. 
+Cricket is an old but well-loved sport. It is played in many different countries and climates and has many forms some long (lasting whole days) and some small (lasting  only a few hours). It, like many other sports is comprised of two teams. One team tries to take ***wickets*** while the other team tries to score ***runs***. 
+There are many ***Teams*** (and types of teams), ***players*** and ***statistics*** to record as that is just the nature of the sport. So a cricket fan would enjoy the ability to view, input, update or remove team or player statistics. 
 
 
 ### Ojectives
@@ -126,6 +126,16 @@ The Jenkins script I used can be characterized in the following way:
 - Installation of dependencies
 
 `sudo apt-get install python3 python3-pip python3-venv`
+
+- Installation of pip requirements 
+
+`python3 -m venv venv 
+source venv/bin/actiavte
+pip3 install -r requirements.txt`
+
+- Run the tests
+
+`python3 -m pytest --cov=application`
 
           
           

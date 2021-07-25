@@ -2,7 +2,7 @@
 
 
 ## Contents
-*[Introduction](#Introduction)
+[Introduction](#Introduction)
 *[Objective](#Objective)
 *[Proposal](#Proposal)
 *[Architecture](#Architecture)

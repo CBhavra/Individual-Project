@@ -19,7 +19,7 @@
 
 [Testing Analysis](#Testing-Analysis)
 
-[Continuous ntegration](Continuous-Integration)
+[Continuous Integration](Continuous-Integration)
 
 [Development](#Development)
 
@@ -190,6 +190,25 @@ I have many possible implementations that I could input:
 - I would have liked to have added buttons for ease of navigation 
 
 - Addition of some form of integration testing such as selenium etc.
+
+
+### Author 
+
+Chasminder Bhavra
+
+
+### Acknowledgements 
+
+I would like to acknowledge and profusely thank the following for their aid and advice in this project:
+
+- God
+- Marius Saunders 
+
+- Ryan Wright 
+
+- Victoria Sacre 
+
+- Oliver Nichols 
 
 
 

@@ -137,6 +137,66 @@ pip3 install -r requirements.txt`
 
 `python3 -m pytest --cov=application`
 
+
+## Development 
+
+Development of this Cricket application can be broken down into two sections. Section one being the Front-End of the application, this corresponds to what the end-user will see. 
+
+
+### Front-End 
+
+The front-end of this Cricket application is in an extremely rudimentary stage and therefore has a very basic view and functionality. The app has been created following the CRUD format as follows:
+
+<img src="https://github.com/CBhavra/Individual-Project/blob/main/images/Front-End%20Read.jpg"/>
+
+The image above shows the read functionality working perfectly. As can be seen whilst following the `/home` URL a database of the current team(s) comes up. In it there are 3 attributes name, country and league of a team. 
+
+<img src="https://github.com/CBhavra/Individual-Project/blob/main/images/Front-End%20Create.jpg"/>
+
+This image is in regards to the create functionality. It has been implmented correctly as if your replace `/home` with `/create` you are given the ability to add a team set. 
+
+<img src="https://github.com/CBhavra/Individual-Project/blob/main/images/Front-End%20Update%20.jpg"/>
+
+The update functionality can be a littel trickier. This is because you are no longer adding a new id or viewing one. Instead you are trying to change an existing one so there is a requirement of knowing what you wish to change before doing so (i.e. you must know the id of which entry you wish to update). Entering `/update/<id>` (where id is known beforehand) in place of `/home` attains this.
+
+The delete function is also avaiable. However, it is impossble to show. As soon as the function is input correctly the entry in the table disappears. Like the update function the id is required so placing `/delete/<id>` in the URL allows you to delete an entry.
+
+
+### Unit Testing 
+
+Unit testing is very basic but paramount to understanding the written codes' success or failure. the way `pytest` works is by taking your desired ouput and asserting through your code to see if the outcome has been met. These tests have been automated in Jenkins. It then provides a report of what passed or failed and what the coverage of code is. In this case the higher the better. 
+When using VS Code 81% coverage was attained. Shown below:
+
+<img src="https://github.com/CBhavra/Individual-Project/blob/main/images/VS%20Code%20Unit%20Test.jpg"/>
+
+The same is true from running through Jenkins:
+
+<img src="https://github.com/CBhavra/Individual-Project/blob/main/images/Jenkins%20test.jpg"/>
+
+As seen above the coverage stayed the same and was still displayed regardless of the fact that the Jenkins build failed. 
+
+
+## Footer 
+
+
+### Future Implementations
+
+I have many possible implementations that I could input:
+
+- To begin with I would have like to have completed the stats table 
+
+- I would definitely improve upon the Front-End of the application 
+
+- I would have liked to have added buttons for ease of navigation 
+
+- Addition of some form of integration testing such as selenium etc.
+
+
+
+
+
+
+
           
           
 

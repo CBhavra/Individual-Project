@@ -42,7 +42,7 @@ Cricket is an old but well-loved sport. It is played in many different countries
 There are many ***Teams*** (and types of teams), ***players*** and ***statistics*** to record as that is just the nature of the sport. So a cricket fan would enjoy the ability to view, input, update or remove team or player statistics. 
 
 
-### Ojectives
+### Ojective
 
 The core objective of this Project is to produce a CRUD application using the particuolar tools given to us for example:
 

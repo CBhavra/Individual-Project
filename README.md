@@ -80,6 +80,15 @@ The follwoing is an epic (a collection of User Stories that are the core require
 
 ### Risk Assessment 
 
-My risk assessment can be seen 
+My risk assessment can be seen below:
+
+<img src="https://github.com/CBhavra/Individual-Project/blob/main/images/Risk%20Assessment.jpg"
+
+
+
+
+
+
+
 
 

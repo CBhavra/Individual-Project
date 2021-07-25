@@ -15,7 +15,7 @@
 
 [Project Tracking](#Project-Tracking)
 
-[Entity Realtionship Diagram](#Entity-Realtionship-Diagram)
+[Entity Relationship Diagram](#Entity-Relationship-Diagram)
 
 [Testing Analysis](#Testing-Analysis)
 

@@ -35,6 +35,8 @@
 
 [Acknowledements](#Acknowledgements)
 
+[Version](#Version)
+
 
 ## Introduction
 
@@ -62,7 +64,7 @@ The core objective of this Project is to produce a CRUD application using the pa
 ### Proposal 
 
 As a fan of cricket I would enjoy an app that could show me all kinds of statistics of my favourite players or teams. So I know other fans would also like it. Fans should be able to view any stats they wish, create new stats for new players, update old stats and remove stats if they are 'fake' or have been put up as a joke.
-The follwoing is an epic (a collection of User Stories that are the core requirements of the app).
+The following is an epic (a collection of User Stories that are the core requirements of the app).
 
 ***Create***
 - As a cricket fan I want to be able to create statistics so that I view them at another later date 
@@ -210,3 +212,7 @@ I would like to acknowledge and profusely thank the following for their aid and 
 - Victoria Sacre 
 
 - Oliver Nichols 
+
+
+### Version 
+26/07/2021 Version 1.0.0

@@ -3,7 +3,7 @@
 
 ## Contents
 
-- [Introduction](#Introduction)
+[Introduction](#Introduction)
 
 [Objective](#Objective)
 
